@@ -15,8 +15,8 @@ const MyRating = () => {
     getMovies();
   }, []);
   const getMovies = () => {
-    fetch(`${config.api}/user/rating`, {
-      // fetch('/data/MyMovie.json', {
+//     fetch(`${config.api}/user/rating`, {
+      fetch('/data/MyMovie.json', {
       method: 'GET',
       headers: {
         Authorization:
