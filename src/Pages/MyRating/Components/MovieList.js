@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const MovieList = ({ movie, word }) => {
   const matchSortValue = {
     '담은 순': 'rate_order',
-    // '평점 순': 'average_stars',
-    '평점 순': 'star',
+    '평점 순': 'average_stars',
+//     '평점 순': 'star',
     '가나다 순': 'title',
     '개봉일 순': 'release_date',
   };
@@ -41,10 +41,10 @@ const MovieList = ({ movie, word }) => {
           id={data.id}
           image={data.image}
           title={data.title}
-          // average_stars={data.average_stars}
-          average_stars={data.star}
-          // logo={data.logo}
-          logo={data.is_watcha}
+          average_stars={data.average_stars}
+//           average_stars={data.star}
+          logo={data.logo}
+//           logo={data.is_watcha}
           word={word}
         />
       ))}
