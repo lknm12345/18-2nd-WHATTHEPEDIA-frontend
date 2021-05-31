@@ -14,7 +14,8 @@ class Main extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`${config.api}/movie`)
+//     fetch(`${config.api}/movie`)
+    fetch('/data/MovieData2.json')
       .then(res => res.json())
       .then(res => {
         this.setState({
